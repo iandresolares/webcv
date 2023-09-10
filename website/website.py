@@ -4,7 +4,7 @@ import reflex as rx
 
 from website.utilities import read_yaml
 
-from .pages import about, imprint, index, privacy, projects
+from .pages import about, imprint, index, privacy, projects, contact
 from .states import State
 
 # Get website configuration
@@ -28,7 +28,7 @@ style = {
     "background_repeat": "repeat-y",
     "background_size": r"10000% 10000%",
     "background": website_config["colors"]["background"],
-    "background": "linear-gradient(45deg, #334c3a, #527a53)",  # noqa: F601
+    # "background": "linear-gradient(45deg, #8A6FDF, #FFDB15)",  # noqa: F601
     "animation": "gradientFlow 10s ease infinite",
 }
 
@@ -43,6 +43,8 @@ app.add_page(component=projects, route="/projects", title="Divin Gavran | Projec
 app.add_page(component=about, route="/about", title="Divin Gavran | About")
 
 app.add_page(component=imprint, route="/imprint", title="Divin Gavran | Imprint")
+
+app.add_page(component=contact, route="/contact", title=" Andrés Solares | Contact")
 
 app.add_page(
     component=privacy,

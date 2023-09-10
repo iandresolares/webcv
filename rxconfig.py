@@ -8,4 +8,5 @@ class WebsiteConfig(rx.Config):
 config = WebsiteConfig(
     app_name="website",
     env=rx.Env.DEV,
+    bun_path="/home/andres/.reflex/.bun/bin/bun"
 )

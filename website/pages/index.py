@@ -6,6 +6,8 @@ import reflex as rx
 from website.components import description, heading, layout, project_card, social_media
 from website.utilities import read_yaml, sort_projects
 
+from website.components.heading import heading2
+
 
 def latest_projects(configuration: dict, **props: Any) -> rx.Component:
     """Creates a latest projects component."""
@@ -30,14 +32,17 @@ def index() -> rx.Component:
     """Creates the index page."""
     configuration = read_yaml(os.getcwd() + "/configuration.yaml")
     text = configuration["home"]["description"]
+    # TODO cleanup heading and heading 2
     content = [
         heading(
             content=[
                 rx.text(configuration["home"]["greeting"]),
-                rx.text(configuration["home"]["subgreeting"]),
+                # rx.text(configuration["home"]["subgreeting"]),
             ],
             flex="0 1 30%",
         ),
+        # TODO reduce vertical spacing
+        heading2(rx.text(configuration["home"]["subgreeting"])),
         description(text=text, text_align="center", flex="1 1 10%"),
         social_media(
             configuration=configuration, font_size="clamp(1.5rem, 4.0svh, 8.0rem)"

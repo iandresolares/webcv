@@ -140,7 +140,7 @@ def skills(configuration: dict) -> rx.Component:
     )
 
 
-def background_event(event: dict, background_color: str) -> rx.Component:
+def education_event(event: dict, background_color: str) -> rx.Component:
     """Creates a cv event component."""
     rgb = hex_to_rgb(background_color)
     return rx.flex(
@@ -164,18 +164,17 @@ def background_event(event: dict, background_color: str) -> rx.Component:
     )
 
 
-def background(configuration: dict, **props) -> rx.Component:
-    """Creates a background component."""
+def education(configuration: dict, **props) -> rx.Component:
+    """Creates an education component."""
     background_color = configuration["website"]["colors"]["accent"]
     rgb = hex_to_rgb(background_color)
     cv_events = [
-        background_event(event, background_color)
-        for event in configuration["background"]
+        education_event(event, background_color) for event in configuration["education"]
     ]
 
     header = rx.hstack(
         rx.html("<i class='fas fa-trophy'></i>"),
-        rx.text("Background", font_weight="600"),
+        rx.text("Education", font_weight="600"),
     )
     content = rx.flex(*cv_events, gap="1.0rem", direction="column", **props)
     background_color = f"rgba({rgb[0]}, {rgb[1]}, {rgb[2]}, 0.25)"
@@ -207,7 +206,7 @@ def about() -> rx.Component:
             flex="1 1 20%",
             width="clamp(256px, 80%, 1280px)",
         ),
-        background(configuration),
+        education(configuration),
         skills(configuration),
     ]
     return layout(content, configuration)

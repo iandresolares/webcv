@@ -1,13 +1,13 @@
-title: "Divin Gavran"
+title: "Andrés Solares"
 
 home:
-  greeting: Hi. I'm Divin.
-  subgreeting: A Data Scientist.
+  greeting: ANDRÉS SOLARES
+  subgreeting: Robotics engineer
   description: I'm always involved in exciting projects, continuously seeking opportunities to learn and express my creativity.
 
 about:
-  greeting: I'm Divin.
-  image: "/images/about.jpg"
+  greeting: I'm Andrés.
+  image: "/images/hallstat_cisne_recorte.jpg"
   description: |
     I'm a data scientist with a background in physics who loves unraveling insights from complex data.<br><br>
     When I'm not crunching numbers, you'll find me immersed in software and game development, creating music, exploring art, and diving into the fascinating realms of AI.<br><br>
@@ -27,9 +27,9 @@ navigation:
   
   - title: "Projects"
     href: "/projects"
-  
-  #- title: "Contact"
-  #  href: "/contact"
+
+  - title: "Contact"
+    href: "/contact"
   
 projects-list:
   - name: "Blob Out!"
@@ -79,45 +79,48 @@ social-media:
     url: "https://soundcloud.com/divingavran"
     icon: "fab fa-soundcloud"
 
-background:
-  - name: "Data Scientist"
-    icon: "fas fa-briefcase"
-    from: "2023"
-    to: "today"
-    description: |
-      As an experienced Python developer with a solid background in statistical analysis, my focus is on extracting actionable insights from complex datasets.<br><br>
-      Leveraging my applied knowledge, I specialize in building sophisticated machine learning models, and proactively extend existing codebases to automate the analysis process even further.
+education:
+  - name: "Polytechnic University of Madrid: Master in Automation and Robotics"
+    icon: "fas fa-graduation-cap"
+    from: "September 2020"
+    to: "September 2021"
+    description: >-
+      - Master's Thesis: Locomotion by means of transformable wheels for an intervention robot. Development from scratch, mechanical and electronic design and construction of a functional prototype using additive manufacturing techniques (3D printing). In patent process
+      
+      - Master's Thesis grade: 9.8
+      
+      - Average grade: 9.11
   
-  - name: "Physics, M. Sc."
+  - name: "University of Oviedo: Degree in Industrial Electronics and Automation Engineering."
     icon: "fas fa-graduation-cap"
-    from: "2022"
-    to: "2023"
-    description: |
-      For my Master's thesis, I developed expertise in automating experimental data analysis using deep learning techniques.<br><br> 
-      I focused on improving the performance of an existing object recognition model based on Faster R-CNN by using hyperparameter optimization to achieve better detection results of diffraction patterns in experimental data.<br><br>
-      Additionally, I designed and created a smaller YOLO-based model that was capable of performing similar tasks as the original model, but with significantly faster processing times.
+    from: "September 2016"
+    to: "July 2020"
+    description: >-
+      - Activities and groups: 
+        - Runner-up of Spain badminton by universities (Cartagena 2017) 
+        - Collaborator of the association DRONE4STUDENTS (2016-2017)
+      - Degree's Thesis: Navigation system for an indoor mobile robot. Development of a navigation system in integration with a commercial robotic platform using ROS and simulation in Gazebo. Development of a safe people tracking system
+            
+      - Degree's Thesis grade: 10
+      
+      - Average grade: 6.5
 
-  - name: "Physics, B. Sc."
+  - name: "FH Joanneum: Erasmus+ Program"
     icon: "fas fa-graduation-cap"
-    from: "2016"
-    to: "2022"
-    description: |
-      Through my studies in physics, I developed a solid foundation in both fundamental and advanced topics.<br><br>
-      As I continued to pursue my education, I focused on specializing in computational physics, taking computer science courses and developing strong proficiency in Python.<br><br>
-      For my Bachelor's thesis, I conducted research on the formation of planets on a protoplanetary disk, gaining valuable insights into the migration of planets driven by the disk torques and offering a unique perspective on these phenomena.
+    from: "September 2019"
+    to: "February 2020"
+    description: >-
+      6-month stay at the FH Joanneum University (Graz, Austria) under the Erasmus+ program of the degree, studying for the Master's degree in electronics and computer engineering
 
 # Skills in percent
 skills:
   languages:
-    - name: German
+    - name: Spanish (Native)
       value: 100
     
-    - name: English
-      value: 85
-    
-    - name: Japanese
-      value: 25
-  
+    - name: English (C1)
+      value: 80
+
   coding:
     - name: Python
       value: 100
@@ -181,16 +184,25 @@ skills:
     - name: Godot
       value: 80
 
+contact:
+  message: "Feel free to contact me via phone or email."
+  name: Andrés Solares Jurado
+  email: andresolaresjurado@gmail.com
+  phone: +34 634 768 285
+  city: Gijón
+  province: Asturias
+  country: Spain
+
 
 website:
-  font_size: "1.0rem"
-  font_family: "Lato"
-  font_weight: "400"
+  font_size: "0.5rem"
+  font_family: "Ubuntu"
+  font_weight: "200"
   max_width: "1280px"
   
   colors:
     text: "#dbeadf"
-    background: "#334c3a"
-    primary: "#316d42"
-    secondary: "#183520"
-    accent: "#c1b19c"
+    background: "#323E42"
+    primary: "#8A6FDF"
+    secondary: "#8A6FDF"
+    accent: "#8A6FDF"
